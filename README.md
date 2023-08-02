@@ -1,8 +1,11 @@
 *NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
 
-# Your Project Title Here
+# Azure Machine Learning Engineer Nanodegree Capstone Project: Deploying the best model
 
-*TODO:* Write a short introduction to your project.
+In this project , I will be using Azure AutoML and Hyperdrive functionalities through the Python SDK to build and the deploy
+the best possible model for a Time Series Forecasting problem, i.e, predicting the weekly sales values four weeks into the future
+from different Walmart retail stores. The project workflow is as follows:
+
 
 ## Project Set Up and Installation
 *OPTIONAL:* If your project has any special installation steps, this is where you should put it. To turn this project into a professional portfolio project, you are encouraged to explain how to set up this project in AzureML.
