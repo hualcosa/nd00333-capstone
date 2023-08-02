@@ -1,0 +1,53 @@
+2023-07-31 18:26:03.861 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:26:03.872 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 18:27:49.349 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:27:49.367 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 18:33:03.832 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:33:03.848 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 18:45:25.287 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:45:25.306 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 18:46:53.075 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:47:04.471 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:47:04.488 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 18:59:52.232 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 18:59:52.246 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 19:13:51.068 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 19:13:51.087 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 19:15:24.947 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 19:15:24.956 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 20:39:46.359 - INFO - 21566 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 20:39:46.388 - INFO - 21566 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 21:00:26.312 - WARNING - 5062 - azureml.train.automl.automlconfig.__init__:1535 - Parameters `y_min`, `y_max` are being deprecated. They will be automatically computed from the data.
+2023-07-31 21:00:30.007 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 21:00:30.017 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 21:10:02.890 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 21:10:51.344 - WARNING - 5062 - azureml.train.automl.automlconfig.__init__:1535 - Parameters `y_min`, `y_max` are being deprecated. They will be automatically computed from the data.
+2023-07-31 21:10:53.226 - INFO - 5062 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 21:10:53.229 - INFO - 5062 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 21:20:51.941 - INFO - 28391 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 21:20:51.951 - INFO - 28391 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 22:07:24.346 - INFO - 28391 - azureml.train.automl._local_managed_utils.is_docker_installed:354 - Docker is installed with Docker version 20.10.25+azure-2, build b82b9f3a0e763304a250531cb9350aa6d93723c9
+.
+2023-07-31 22:07:24.358 - INFO - 28391 - azureml.train.automl.automlconfig._start_execution:231 - Submitting remote.
+2023-07-31 23:11:23.699 - INFO - 28391 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetBestChild
+2023-07-31 23:11:23.724 - INFO - 28391 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetChildren
+2023-07-31 23:11:23.914 - INFO - 28391 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=190.02[ms]
+2023-07-31 23:11:23.995 - INFO - 28391 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetBestChild, HowEnded=Success, Duration=296.09[ms]
+2023-07-31 23:13:39.619 - INFO - 28391 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetBestChild
+2023-07-31 23:13:39.642 - INFO - 28391 - azureml.train.automl.run._log_activity:55 - ActivityStarted: GetChildren
+2023-07-31 23:13:39.809 - INFO - 28391 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetChildren, HowEnded=Success, Duration=166.91[ms]
+2023-07-31 23:13:39.875 - INFO - 28391 - azureml.train.automl.run._log_activity:89 - ActivityCompleted: Activity=GetBestChild, HowEnded=Success, Duration=255.53[ms]

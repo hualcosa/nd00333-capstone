@@ -1,0 +1,48 @@
+{
+    "name": "capstone-hyperdrive-env",
+    "version": "Autosave_2023-08-01T18:04:02Z_52a9318f",
+    "environmentVariables": {
+        "EXAMPLE_ENV_VAR": "EXAMPLE_VALUE",
+        "AZUREML_ENTRY_SCRIPT": "score.py"
+    },
+    "python": {
+        "userManagedDependencies": false,
+        "interpreterPath": "python",
+        "condaDependenciesFile": null,
+        "baseCondaEnvironment": null
+    },
+    "docker": {
+        "enabled": false,
+        "baseImage": "mcr.microsoft.com/azureml/openmpi4.1.0-ubuntu20.04:20230509.v1",
+        "baseDockerfile": null,
+        "buildContext": null,
+        "sharedVolumes": true,
+        "shmSize": null,
+        "arguments": [],
+        "baseImageRegistry": {
+            "address": null,
+            "username": null,
+            "password": null,
+            "registryIdentity": null
+        },
+        "platform": {
+            "os": "Linux",
+            "architecture": "amd64"
+        }
+    },
+    "spark": {
+        "repositories": [],
+        "packages": [],
+        "precachePackages": true
+    },
+    "databricks": {
+        "mavenLibraries": [],
+        "pypiLibraries": [],
+        "rcranLibraries": [],
+        "jarLibraries": [],
+        "eggLibraries": []
+    },
+    "r": null,
+    "inferencingStackVersion": null,
+    "assetId": "azureml://locations/brazilsouth/workspaces/e37a0e0b-205a-4d40-92c2-c93d6610cd40/environments/capstone-hyperdrive-env/versions/Autosave_2023-08-01T18:04:02Z_52a9318f"
+}
