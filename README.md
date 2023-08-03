@@ -15,13 +15,6 @@ The best model between the two experiments will be picked, registered in the wor
 
 <img align="center" src="images/project_workflow.png">
 
-## Screen Recording
-To provide an even better understanding of the project I have recorded a short demo going through the key points of the projet. I hope it helps!
-<screencast>
-- A working model
-- Demo of the deployed  model
-- Demo of a sample request sent to the endpoint and its response
-
 ## Project Set Up and Installation
 Most of the work was done running jupyter notebooks using the Azure Machine Learning Studio Notebooks section. You can find the notebooks in the `starter_file` folder under the name 'automl.ipynb' and 'hyperparameter_tunning.ipynb'.
 The environment definition files used in the web service container instance are also available in the path: `/starter_file/env_files`
@@ -111,3 +104,7 @@ The steps for deploying the model were:
 <br>
 Deploying the model:
 <img align="center" src="images/model_endpoint_healthy.png">
+
+## Screen Recording
+To provide an even better understanding of the project I have recorded a short demo going through the key points of the projet. I hope it helps!
+[![Watch the video](https://img.youtube.com/vi/vjB3wWv1sGw/maxresdefault.jpg)](https://youtu.be/vjB3wWv1sGw)
