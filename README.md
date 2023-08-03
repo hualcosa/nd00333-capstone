@@ -73,17 +73,41 @@ Using ```best_model.get_properties()``` it is possible to see that the best mode
 ![image](https://github.com/hualcosa/nd00333-capstone/assets/46836901/456511ab-aed8-42cd-971c-d006c205cbfc)
 
 ## Hyperparameter Tuning
-*TODO*: What kind of model did you choose for this experiment and why? Give an overview of the types of parameters and their ranges used for the hyperparameter search
+For the hyperparameter tunning experiment, I chose an Xgboost Regressor model. Xgboost models gained a lot of notoriety recently for winning Kaggle Data science competitions and being able to fit highly accurate models. The hyperparameters I chose to tune were:
+ - Learning_rate: This hyperparameter controls the step size at each boosting iteration. A lower learning rate makes the model converge slowly but can lead to better generalization. On the other hand, a higher learning rate can speed up the convergence but may cause the model to overfit.
+ - max_depth:  It determines the maximum depth of each decision tree in the boosting process. A higher value allows the model to capture more complex relationships in the data, but it can also lead to overfitting. It's important to find the right balance for your specific problem.
+ - n_estimators: This hyperparameter specifies the number of boosting rounds or decision trees to be built. Increasing the number of estimators can improve the model's performance, but it also increases the training time.
+ - reg_lambda: controls L2 regularization, respectively. It adds a penalty term to the loss function, which helps in reducing overfitting and improving generalization.
+ - subsample: It specifies the fraction of training samples to be used for each boosting round. Setting a value less than 1.0 introduces randomness and can help prevent overfitting. However, too low a value may lead to underfitting.
+ - colsample_bytree: This hyperparameter determines the fraction of features (columns) to be randomly selected for each tree. It helps in reducing overfitting by introducing randomness in feature selection.
+   
+I have Chosen a RandomParameterSampling configuration to randomly try different combinations. I have also used an Early termination Policy called BanditPolicy. The Bandit Policy works by continuously monitoring the intermediate results of the ongoing training runs and comparing them to the best-performing run so far. It calculates a reward threshold based on the best-performing run and a slack factor that determines the allowed slack or deviation from the best run's performance. if a run's performance falls below the reward threshold plus the slack factor, the Bandit Policy terminates that run early.
+<br>
+![image](https://github.com/hualcosa/nd00333-capstone/assets/46836901/be3d34e3-7a48-400c-a1a9-939c43341155)
+<br>
+The training code is in the train.py file. The code loads the dataset, process it(split into train and validation sets), and fits the model with the hyperparameters combination. I have chosen a simple heuristic to use the past 8 weeks as the window size, and to not shuffle data
+when "train-test-splitting" to avoid data leakage.
 
-
+Run details widget for monitoring job hyperdrive job progress
+<img align="center" src="images/hyperdrive_runDetails.png">
 ### Results
-*TODO*: What are the results you got with your model? What were the parameters of the model? How could you have improved it?
-
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
-
+The best model found by the experiment achieved a normalized root mean squared error of 5.4108e-4
+<br>
+Best model characteristics:
+<img align="center" src="images/hyperdrive_best_model.png">
 ## Model Deployment
-*TODO*: Give an overview of the deployed model and instructions on how to query the endpoint with a sample input.
+comparing the best model yield by Automl and Hyperdrive jobs, We can observe the following:<br>
 
+1. The best model from AutoML has a normalized root mean squared error of 0.05943
+2. The best model from Hyperdrive has a normalized root mean squared error of 5.4108e-4
 
-## Standout Suggestions
-*TODO (Optional):* This is where you can provide information about any standout suggestions that you have attempted.
+Since the fine-tuned Xgboost Regressor found by the Hyperdrive job performs the best, this is the model that will be deployed.
+The steps for deploying the model were:
+1. Write a score.py script that will be run in an ACI instance to perform real-time inference.
+2. Get the environment where the best model was run to make sure that all code dependencies are accounted for.
+3. Get the registered model from the workspace.
+4. Create inference and deployment configuration for where the script is going to be run.
+5. deploy the model.
+<br>
+Deploying the model:
+<img align="center" src="images/model_endpoint_healthy.png">
